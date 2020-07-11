@@ -1,7 +1,7 @@
-FILE = bitcnt_1.c bitcnt_2.c bitcnt_3.c bitcnt_4.c bitcnts.c bitfiles.c bitstrng.c bstr_i.c 
+FILE = bitcount_1.c bitcount_2.c bitcount_3.c bitcount_4.c bitcounts.c bitfiles.c bitstrng.c bstr_i.c 
 
-bitcnts: ${FILE} Makefile
-	gcc -static ${FILE} -O3 -o bitcnts
+bitcounts: ${FILE} Makefile
+	gcc -static ${FILE} -O3 -o bitcounts
 
 clean:
-	rm -rf bitcnts output*
+	rm -rf bitcounts output*
