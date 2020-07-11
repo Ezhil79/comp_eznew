@@ -1,0 +1,68 @@
+QSORT timings: 
+qsort small
+
+real	0m0.008s
+user	0m0.008s
+sys	0m0.000s
+qsort large
+
+real	0m0.079s
+user	0m0.079s
+sys	0m0.000s
+#######################################################
+BITCOUNT timings: 
+bitcounts small
+
+real	0m0.010s
+user	0m0.010s
+sys	0m0.000s
+bitcounts large
+
+real	0m0.155s
+user	0m0.130s
+sys	0m0.000s
+#######################################################
+SUSAN timings: 
+susan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+susan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.085s
+user	0m0.075s
+sys	0m0.000s
+
+real	0m0.016s
+user	0m0.016s
+sys	0m0.000s
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+#######################################################
+BASICMATH timings: 
+basicmath small
+
+real	0m0.023s
+user	0m0.016s
+sys	0m0.000s
+basicmath large
+
+real	0m0.536s
+user	0m0.504s
+sys	0m0.021s
+#######################################################
