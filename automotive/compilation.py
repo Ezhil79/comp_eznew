@@ -28,7 +28,7 @@ def compile_src(dirname, cflags, debug):
                 print("Compilation failed with: \n{}\n".format(comp1.stderr))
             
     elif cwd == "susan":
-        static_flags = ["gcc", "-static", "-O4", "susan.c", "-o", "susan"+str(len(cflags)), "-lm", "-funroll-all-loops", "-fno-tree-loop-optimize", "-fno-inline-functions", "-funsafe-math-optimizations", "-fno-guess-branch-probability", "-fno-ivopts", "-frecord-gcc-switches"]
+        static_flags = ["gcc", "-static", "-O3", "susan.c", "-o", "susan"+str(len(cflags)), "-lm", "-funroll-all-loops", "-fno-tree-loop-optimize", "-fno-inline-functions", "-funsafe-math-optimizations", "-fno-guess-branch-probability", "-fno-ivopts", "-frecord-gcc-switches"]
         full_flags = static_flags + cflags
         comp = run(full_flags, stdout=PIPE, stderr=PIPE)
         if debug:
@@ -77,29 +77,3 @@ def exe_clean(dirname):
         return True
     else:
         return False
-
-# ofile = src_dir+"/automotive.txt"
-
-# if os.path.isfile(ofile):
-#     os.remove(ofile)
-# else:
-#     ofile
-
-# # Clean binaries before run
-# for d in benchdirs:
-#     if exe_clean(os.path.join(src_dir, d)):
-#         print("Successfully cleaned: {}".format(os.path.join(src_dir, d)))
-#     else:
-#         print("Not cleaned: {}".format(os.path.join(src_dir, d)))
-
-# ez_flags = ["-foptimize-register-move", "-ftree-loop-if-convert", "-fmerge-constants", "-ftree-coalesce-inlined-vars", "-fwhole-program"]
-
-# perm_list = [list(itertools.combinations(ez_flags, i)) for i in range(1,len(ez_flags)+1)]
-
-# for x in perm_list:
-#     print(list(x[0]))
-
-# # Execute compilation and run
-# for d in benchdirs:
-#     for x in perm_list:
-#         compile_src(d, list(x[0]))
