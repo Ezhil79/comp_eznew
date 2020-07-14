@@ -1,0 +1,380 @@
+QSORT SMALL timings: 
+-foptimize-register-moveqsort small
+
+real	0m0.008s
+user	0m0.000s
+sys	0m0.008s
+#######################################################
+QSORT LARGE timings: 
+-foptimize-register-moveqsort large
+
+real	0m0.050s
+user	0m0.040s
+sys	0m0.010s
+#######################################################
+QSORT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convertqsort small
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+#######################################################
+QSORT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convertqsort large
+
+real	0m0.051s
+user	0m0.042s
+sys	0m0.008s
+#######################################################
+QSORT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsqsort small
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+#######################################################
+QSORT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsqsort large
+
+real	0m0.051s
+user	0m0.050s
+sys	0m0.000s
+#######################################################
+QSORT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsqsort small
+
+real	0m0.007s
+user	0m0.007s
+sys	0m0.000s
+#######################################################
+QSORT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsqsort large
+
+real	0m0.043s
+user	0m0.043s
+sys	0m0.000s
+#######################################################
+QSORT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programqsort small
+
+real	0m0.008s
+user	0m0.008s
+sys	0m0.000s
+#######################################################
+QSORT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programqsort large
+
+real	0m0.050s
+user	0m0.050s
+sys	0m0.000s
+#######################################################
+BITCOUNT SMALL timings: 
+-foptimize-register-movebitcounts small
+
+real	0m0.010s
+user	0m0.010s
+sys	0m0.000s
+#######################################################
+BITCOUNT LARGE timings: 
+-foptimize-register-movebitcounts large
+
+real	0m0.076s
+user	0m0.077s
+sys	0m0.000s
+#######################################################
+BITCOUNT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convertbitcounts small
+
+real	0m0.009s
+user	0m0.009s
+sys	0m0.000s
+#######################################################
+BITCOUNT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convertbitcounts large
+
+real	0m0.080s
+user	0m0.080s
+sys	0m0.000s
+#######################################################
+BITCOUNT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsbitcounts small
+
+real	0m0.009s
+user	0m0.009s
+sys	0m0.000s
+#######################################################
+BITCOUNT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsbitcounts large
+
+real	0m0.081s
+user	0m0.081s
+sys	0m0.000s
+#######################################################
+BITCOUNT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsbitcounts small
+
+real	0m0.009s
+user	0m0.008s
+sys	0m0.000s
+#######################################################
+BITCOUNT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsbitcounts large
+
+real	0m0.080s
+user	0m0.080s
+sys	0m0.000s
+#######################################################
+BITCOUNT SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programbitcounts small
+
+real	0m0.009s
+user	0m0.009s
+sys	0m0.000s
+#######################################################
+BITCOUNT LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programbitcounts large
+
+real	0m0.074s
+user	0m0.074s
+sys	0m0.000s
+#######################################################
+SUSAN SMALL timings: 
+-foptimize-register-movesusan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+#######################################################
+SUSAN LARGE timings: 
+-foptimize-register-movesusan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.044s
+user	0m0.044s
+sys	0m0.000s
+
+real	0m0.008s
+user	0m0.008s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+#######################################################
+SUSAN SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convertsusan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+#######################################################
+SUSAN LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convertsusan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.042s
+user	0m0.042s
+sys	0m0.000s
+
+real	0m0.015s
+user	0m0.008s
+sys	0m0.008s
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+#######################################################
+SUSAN SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantssusan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+#######################################################
+SUSAN LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantssusan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.044s
+user	0m0.044s
+sys	0m0.000s
+
+real	0m0.011s
+user	0m0.011s
+sys	0m0.000s
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.000s
+#######################################################
+SUSAN SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varssusan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.003s
+user	0m0.003s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+#######################################################
+SUSAN LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varssusan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.042s
+user	0m0.042s
+sys	0m0.000s
+
+real	0m0.008s
+user	0m0.008s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+#######################################################
+SUSAN SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programsusan small -smoothing
+susan small -edges
+susan small -corners
+
+real	0m0.005s
+user	0m0.005s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+
+real	0m0.001s
+user	0m0.001s
+sys	0m0.000s
+#######################################################
+SUSAN LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programsusan large - smooth
+susan large - edges
+susan large - corners
+
+real	0m0.039s
+user	0m0.039s
+sys	0m0.000s
+
+real	0m0.018s
+user	0m0.017s
+sys	0m0.000s
+
+real	0m0.004s
+user	0m0.000s
+sys	0m0.004s
+#######################################################
+BASICMATH SMALL timings: 
+-foptimize-register-movebasicmath small
+
+real	0m0.013s
+user	0m0.012s
+sys	0m0.000s
+#######################################################
+BASICMATH LARGE timings: 
+-foptimize-register-movebasicmath large
+
+real	0m0.324s
+user	0m0.242s
+sys	0m0.028s
+#######################################################
+BASICMATH SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convertbasicmath small
+
+real	0m0.016s
+user	0m0.015s
+sys	0m0.000s
+#######################################################
+BASICMATH LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convertbasicmath large
+
+real	0m0.312s
+user	0m0.252s
+sys	0m0.020s
+#######################################################
+BASICMATH SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsbasicmath small
+
+real	0m0.012s
+user	0m0.012s
+sys	0m0.000s
+#######################################################
+BASICMATH LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constantsbasicmath large
+
+real	0m0.304s
+user	0m0.260s
+sys	0m0.010s
+#######################################################
+BASICMATH SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsbasicmath small
+
+real	0m0.016s
+user	0m0.015s
+sys	0m0.000s
+#######################################################
+BASICMATH LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-varsbasicmath large
+
+real	0m0.308s
+user	0m0.262s
+sys	0m0.010s
+#######################################################
+BASICMATH SMALL timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programbasicmath small
+
+real	0m0.017s
+user	0m0.017s
+sys	0m0.000s
+#######################################################
+BASICMATH LARGE timings: 
+-foptimize-register-move -ftree-loop-if-convert -fmerge-constants -ftree-coalesce-inlined-vars -fwhole-programbasicmath large
+
+real	0m0.351s
+user	0m0.256s
+sys	0m0.020s
+#######################################################

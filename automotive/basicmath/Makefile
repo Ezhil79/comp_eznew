@@ -9,4 +9,4 @@ basicmath_large: ${FILE2} Makefile
 	gcc -static -O3 ${FILE2} -o basicmath_large -lm
 
 clean:
-	rm -rf basicmath_small basicmath_large output*
+	rm -rf basicmath_small basicmath_small1 basicmath_small2 basicmath_small3 basicmath_small4 basicmath_small5 basicmath_large basicmath_large1 basicmath_large2 basicmath_large3 basicmath_large4 basicmath_large5 output*

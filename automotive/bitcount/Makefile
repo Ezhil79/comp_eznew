@@ -4,4 +4,4 @@ bitcounts: ${FILE} Makefile
 	gcc -static ${FILE} -O3 -o bitcounts
 
 clean:
-	rm -rf bitcounts output*
+	rm -rf bitcounts bitcounts1 bitcounts2 bitcounts3 bitcounts4 bitcounts5 output*
