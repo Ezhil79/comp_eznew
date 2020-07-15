@@ -82,7 +82,7 @@ ez_flags = ["", "-foptimize-register-move", "-ftree-loop-if-convert"]
 
 perm_list = [list(itertools.combinations(ez_flags, i)) for i in range(1,len(ez_flags)+1)]
 
-outputfile="/home/russellb/DrEzhil/codebase/comp_eznew/output.csv"
+outputfile="/home/russellb/DrEzhil/codebase/comp_eznew/output_new.csv"
 # Execute compilation and run
 for d in benchdirs:
     print("Starting to compile: {}\n".format(d))
